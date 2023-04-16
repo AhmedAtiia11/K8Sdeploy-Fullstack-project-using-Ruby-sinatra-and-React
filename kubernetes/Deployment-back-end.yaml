@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-end-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ruby
+  template:
+    metadata:
+      name: ruby-pod
+      labels:
+        app: ruby
+    spec:
+      containers:
+        - image: ahmedatya11/ruby-backend-img
+          name: back-end-cont
+          ports:
+            - containerPort: 5000

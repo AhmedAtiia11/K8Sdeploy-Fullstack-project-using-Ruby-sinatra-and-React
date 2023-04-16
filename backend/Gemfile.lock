@@ -28,7 +28,7 @@ PLATFORMS
 DEPENDENCIES
   sinatra
   sinatra-contrib
-  sinatra-cross_origin
+  sinatra-cross_origin (~> 0.4.0)
 
 BUNDLED WITH
    2.1.4
